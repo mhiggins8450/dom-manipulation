@@ -36,7 +36,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   // Part 5
-  
+const pastRacesList = document.getElementById('past-races');
+
+for (let i = 0; i < pastRacesList.children.length; i++) {
+  const listItem = pastRacesList.children[i];
+
+if (listItem.textContent === 'Chicago') {
+    pastRacesList.removeChild(listItem);
+    break;
+  }
+}
 
   // Part 6
 
