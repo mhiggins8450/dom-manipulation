@@ -17,19 +17,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Do all of your work inside the document.addEventListener  
 
   // Part 1
-
+  const mainTitle = document.querySelector('#main-title');
+  mainTitle.textContent = "DOM's Fanpage";
 
   // Part 2
-
+  const body = document.body;
+  body.style.backgroundColor = "#B9D9EB";
 
   // Part 3
-
+  const favoriteThingsList = document.getElementById('favorite-things');
+  const lastListItem = favoriteThingsList.lastElementChild;
+  favoriteThingsList.removeChild(lastListItem);
 
   // Part 4
-
+  const specialTitles = document.querySelectorAll('.special-title');
+  specialTitles.forEach(title => {
+  title.style.fontSize = '2rem';
+  });
 
   // Part 5
-
+  
 
   // Part 6
 
