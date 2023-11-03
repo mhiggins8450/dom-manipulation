@@ -41,7 +41,7 @@ const pastRaces = document.getElementById('past-races');
 for (let i = 0; i < pastRaces.children.length; i++) {
   const listItem = pastRaces.children[i];
 
-if (listItem.textContent === 'Bella Vista') {
+if (listItem.textContent === 'Chicago') {
     pastRaces.removeChild(listItem);
     break;
   }
@@ -55,7 +55,19 @@ newListItem.textContent = ('Bella Vista');
 pastRacesList.appendChild(newListItem);
 
   // Part 7
+const mainContent = document.querySelector('.main');
+const newBlogPost = document.createElement('div');
+newBlogPost.classList.add('blog-post');
+const cityHeading = document.createElement('h2');
+cityHeading.textContent = 'Bella Vista';
 
+const blogContent = document.createElement('p');
+blogContent.textContent = "My wife and I love Bella Vista, Bonaire!";
+
+newBlogPost.appendChild(cityHeading);
+newBlogPost.appendChild(blogContent);
+
+mainContent.appendChild(newBlogPost);
 
   // Part 8
 
