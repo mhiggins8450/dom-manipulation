@@ -36,19 +36,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   // Part 5
-const pastRacesList = document.getElementById('past-races');
+const pastRaces = document.getElementById('past-races');
 
-for (let i = 0; i < pastRacesList.children.length; i++) {
-  const listItem = pastRacesList.children[i];
+for (let i = 0; i < pastRaces.children.length; i++) {
+  const listItem = pastRaces.children[i];
 
-if (listItem.textContent === 'Chicago') {
-    pastRacesList.removeChild(listItem);
+if (listItem.textContent === 'Bella Vista') {
+    pastRaces.removeChild(listItem);
     break;
   }
 }
 
   // Part 6
+const pastRacesList = document.getElementById('past-races');
+const newListItem = document.createElement('li');
 
+newListItem.textContent = ('Bella Vista');
+pastRacesList.appendChild(newListItem);
 
   // Part 7
 
